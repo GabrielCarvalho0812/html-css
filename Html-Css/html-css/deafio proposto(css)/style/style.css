@@ -1,0 +1,181 @@
+@charset "UTF-8";
+@font-face{
+    font-family: Android;
+    src: url(/font/idroid.otf) format('opentype');
+}
+
+:root{ /*definir uma variavel*/
+   --font-Android:"Android";
+   --font-padrao:arial,verdana,helvetica;
+   --cor0: rgb(104, 203, 104);
+   --cor2: white;
+   --cor3: rgba(218, 218, 244, 0.66);
+   --cor4: black;
+   --cor5: rgba(233, 93, 233, 0.644);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: white;
+    font-family: var(--font-padrao);
+}
+
+header{
+    background-image:linear-gradient(to bottom, var(--cor5),var(--cor4));
+    color: white;
+    min-height: 150px;/*tamanho minimo altura*/
+    text-align: center;/*para colocar texto no centro*/
+    padding-top: 30px;
+    padding: 10px;  
+}
+
+header h1{
+    font-family: var(--font-Android);
+    color: var(--cor4);
+    margin-bottom: 20px ;
+    font-size: 3em;
+    text-shadow: 2px 2px 2px rgba(10, 9, 9, 0.623);/*para dar sombra no texto*/
+}
+
+header p{
+    color: var(--cor2);
+    font-family: var(--font-padrao);
+    font-size: 1.2em ;
+    max-width: 600px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.623);/*sombra no texto*/
+}
+
+nav{
+    background-color: black;
+    padding: 15px;
+    font-weight: bold;
+    
+}
+nav a{
+    color: var(--cor5);
+    text-decoration: none;
+    padding: 10px;
+    
+    
+   
+}
+
+nav a:hover{
+    background-color:rgb(68, 8, 57);
+    color: rgb(251, 251, 251);
+    border-radius: 5px;
+    transition-duration: 0.5s;/*transição*/
+}
+
+
+
+main{
+    padding: 20px;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+main h1{
+    font-family: var(--font-Android);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}   
+main h2{
+    font-family: var(--font-Android);
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right,rgb(211, 81, 222),rgb(183, 180, 180));
+    text-indent: 8px;
+   
+}
+
+main p{
+    margin: 10px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em; /*para separar o conteudo escrito*/
+}
+
+main strong{
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+    font-weight: bold; 
+}
+
+main a{
+    color: rgb(184, 9, 9);
+    padding: 2px 3px;
+    font-weight: bold;/*para deixar em negrito*/
+    
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+div.video{
+    background-image: linear-gradient(to right,rgb(211, 81, 222),rgb(183, 180, 180));
+    padding: 20px;
+    margin: 0px -20px 30px -20px;
+    position: relative;
+    padding-bottom: 58%;
+
+}
+
+div.video iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+aside {
+    background-color: rgba(204, 106, 219, 0.467);
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+aside h3{
+    background-image: linear-gradient(to right,rgb(211, 81, 222),rgb(183, 180, 180));
+   
+}
+
+aside ul {
+    list-style-type: "\2714";/*para colocar emogi do lado**/
+    list-style-position: inside;/*para a bolinha da lista ficar para dentro do conteúdo*/
+    columns: 2;/*dividir lista em duas colunas*/
+}
+
+footer{
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    padding: 7px;
+}
+
+footer a{
+    font-weight: bold;
+}
