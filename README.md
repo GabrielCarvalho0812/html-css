@@ -2,6 +2,10 @@
 
 Este é um projeto simples de uma landing page desenvolvido com HTML, CSS Você pode clonar esse repositório e rodar o projeto localmente para visualizá-lo em seu navegador.
 
+<p align="center">
+  <img src="Html-Css/html-css/deafio proposto(css)/img/Imagem colada.png" alt="Controle de acesso" width="600"/>
+</p>
+
 ## Como clonar o repositório
 
 1. crie uma pasta em seu computador chamada: page-android
